@@ -6,7 +6,7 @@ import store from './app/store'
 
 export const AppRoutes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Provider store={store}>
         <Routes>
           <Route path={'/'} element={<Home />}/>
